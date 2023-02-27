@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Digital</title>
+</head>
+<body>
+    <style>
+        *{
+    		margin: 0;
+    		padding: 0;
+		}
+
+		body{
+    				background-color: black;
+			}
+        header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			transition: 0.7s;
+			padding: 30px 20px;
+			z-index: 10;
+		}
+
+
+		nav{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+
+		header ul{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		header ul li{
+			list-style: none;
+			color: white;
+		}
+
+		header ul li a{
+			position: realative;
+			font-family: helvetica;
+			margin: 0px 15px;
+			text-decoration: none;
+			color: #fff;
+			letter-spacing: 2px;
+			font-weight: 600;
+			transition: 0.7s;
+		}
+        .Fondo img{
+			background-size: 50% ;
+			width: 100%;
+			height: 100vh;
+			position: realative;
+			border-radius: 20px;
+			box-shadow: 5px 8px 12px black;
+		}
+        .Fondo p{
+			font-size: 2.89rem;
+			color: white;
+			position: absolute;
+			top: 24%;
+			left: 35%;
+			transform: translate(-25%,-95%);
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+		}
+        .primero {
+            color: white;
+            display: flex;
+			justify-content: center;
+		}
+        .primero img {
+			width: 350px;
+			height: 250px;
+		}
+		.segundo h1 {
+			display: flex;
+			justify-content: center;
+		}
+		.segundo {
+			color: white;
+			display: flex;
+			justify-content: center;
+		}
+		.tercero h1{
+			color: white;
+			display: flex;
+			justify-content: center;
+
+		}
+		.tercero img {
+			width: 100px;
+			height: 100px;
+			margin: 0 5px;
+			display: flex;
+			justify-content: center;
+		}
+		.tercero p {
+			color: white;
+
+		}
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a>Inicio</a></li>
+                <li><a>Nosotros</a></li>
+                <li><a>Asesoria</a></li>
+                <li><a>Marketing Digital</a></li>
+                <li><a>Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Fondo">
+        <img src="{% static "imagenes/tiki.jpg" %}">
+        <p>"Consultoria Digital Tiki"</p>
+    </section>
+	<br><br>
+    <div class="primero">
+        <div><h2>¿Quienes Somos?</h2>
+        <h2>Somos asesores comprometidos con</h2>
+		<h2>un solo cometido: ayudar a nuestros</h2>
+		<h2>clientes a cumplir sus sueños y</h2>
+		<h2>objetivos, esto lo consehuimos mediante </h2>
+		<h2>asesorias profesionales en 2 grandes areas</h2>
+		<h2>Provisional y Desarrollo</h2>
+		</div>
+
+		<img src="{% static "imagenes/tiki.jpg" %}">
+    </div> 
+	<hr>
+	<div class="segundo">
+		<div><h1>Estrategia Digital</h1>
+			<p>Ponemos a tu disposicion 10 años de experiencia liderando casos de exitos en SEO, SEM, SOCIAL MEDIA Y ANALITICA WEB</p>
+			<p>para difundir una hoja de ruta hacia el exito en las operaciones digitales de tu empresa</p>
+			<p>desarrollando una propuesta unica de venta que maximice el valor para tus clientes y la</p>
+			<p>rentabilidad en tu cuenta de resultados</p>
+			<br>
+			<p>Customer Experience</p>
+			<p>Estrategia CEO</p>
+			<p>Estrategia Performance / SEM Marketing </p>
+			<p>Estrategia Marketplaces </p>
+			<p>Estrategia Redes Sociales</p>
+			<p>Medicion y Analisis</p>
+			<p>Marketing Automatizado</p>
+			<p>Inbound y Contenidos</p>
+			<p>Desarrollo Web</p>
+		</div>
+		
+	</div>
+	<hr>
+	<div class="tercero">
+		<div><h1>Especialistas</h1></div>
+		<img src="{% static "imagenes/micausa.jpg" %}" >
+		<p>Ing. Tikillauri</p>
+		<img src="{% static "imagenes/micausa.jpg" %}" >
+		<p>Ing. Tikillauri</p>
+		<img src="{% static "imagenes/micausa.jpg" %}" >
+		<p>Ing. Tikillauri</p>
+	</div>
+</body>
+</html>

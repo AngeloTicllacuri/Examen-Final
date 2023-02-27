@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0f9c45;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    color: white;
+}
+
+header ul li a{
+    position: realative;
+    font-family: helvetica;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.Fondo img{
+    background-size: 50% ;
+    width: 100%;
+    height: 100vh;
+    position: realative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+.Fondo p{
+    font-size: 2.89rem;
+    color: white;
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    transform: translate(-25%,-95%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none
+}
+
+.abajo{
+    background: white;
+    padding: 15px 20px;
+}
+
+.abajo .logo,
+.abajo ul li a{
+    color: black;
+}
+
+.row h2{
+    font-size: 2rem;
+    color: #4BE3C7;
+    text-decoration: underline;
+}
+
+.row h3{
+    color: white;
+}
+
+.row h3 a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.division {
+     border-bottom: .3em solid #FEFEFE;
+}
